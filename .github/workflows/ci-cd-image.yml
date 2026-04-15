@@ -43,7 +43,5 @@ jobs:
       - name: start container
         run: docker compose up -d
 
-      - name: check container
-  run: |
-    sleep 5
-    curl localhost:8080
+      name: check container
+        run: curl localhost:8080
